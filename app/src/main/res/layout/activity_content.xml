@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_above="@+id/share_btn" android:layout_alignParentTop="true" android:alpha="0.9">
+        <RelativeLayout android:id="@+id/sms_layout" android:background="@drawable/button_custom2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="50sp"
+                android:textColor="#262626"
+                android:id="@+id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="5dp" android:text="13/45" />
+
+            <ImageView android:id="@+id/favorite_sms"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" android:layout_marginRight="2dp"
+                android:src="@drawable/heart" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="2dp" />
+
+
+            <TextView android:textSize="25sp" android:textColor="#262626" android:id="@+id/message" android:background="@drawable/button_custom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="You foolish heart, beating so hard you almost escape the cages of my chest. Why him of all people? He did not even tick any boxes from my checklist! I guess that’s why I will never call you any other way."
+                android:layout_below="@+id/favorite_sms"
+                android:layout_alignLeft="@+id/number"
+                android:layout_alignStart="@+id/number"
+                />
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView android:id="@+id/share_btn" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:src="@drawable/share_gray" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@+id/copy_btn" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:src="@drawable/pack256" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@+id/random_btn" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:src="@drawable/shuffle128_gray" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+
+    <ImageView android:id="@+id/dialogue_btn" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:src="@drawable/share_gray" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

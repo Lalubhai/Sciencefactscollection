@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/background_favorite_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout android:background="@color/colorPrimaryDark"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/icon_back_to_main"
+            android:padding="1dp"
+            android:paddingLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:src="@drawable/back"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <TextView android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/show_type_title3"
+            android:paddingLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flirty Text Messages"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <TextView android:textSize="16sp"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/notify_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Your favorite list is empty!" />
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SearchView android:id="@+id/search_view3"
+            android:background="@drawable/search_draw"
+            android:padding="2dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="6dp"
+            android:iconifiedByDefault="false" />
+        <ListView android:id="@+id/listView3"
+            android:background="#F0F0F0"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#F5F5F5"
+            android:dividerHeight="8dp" />
+    </LinearLayout>
+</LinearLayout>

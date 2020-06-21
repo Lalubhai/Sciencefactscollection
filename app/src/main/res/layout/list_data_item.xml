@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/item_listview"
+    android:background="@drawable/button_custom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:alpha="0.9"
+    android:weightSum="1">
+    <LinearLayout
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="horizontal"
+        android:layout_width="50dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView android:textSize="18sp"
+            android:textColor="#262626"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/position"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.37" />
+    </LinearLayout>
+    <TextView android:id="@+id/view"
+    android:background="#ea5b2f"
+    android:layout_width="1dp"
+    android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/title_lv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="text view"
+        android:textColor="#262626"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+</LinearLayout>
